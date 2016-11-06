@@ -21,6 +21,8 @@
 bld/
 [Bb]in/
 [Oo]bj/
+#Non existing old folder
+Classes/
 
 # Visual Studio 2015 cache/options directory
 .vs/
