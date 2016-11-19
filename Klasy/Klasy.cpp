@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "Person.h"
 #include "Car.h"
+#include "Truck.h"
 #include <iostream>
 
 using namespace std;
@@ -23,7 +24,17 @@ void printPerson3(Person * person) {
 	cout << person->name << " " << person->surname << " " << person->nationality << endl;
 }
 
-int main()
+int main() {
+	Person p("Anna", "Iwan", 780512712548L, 175, "german");
+	Truck * t = new Truck(p,2012,"Volvo","a333",1500);
+
+	cout << t->brand<<" -- "<<t->load;
+	delete t;
+	system("pause");
+
+}
+
+int main2()
 {
 	Person p;
 	p.name = "Helena";
