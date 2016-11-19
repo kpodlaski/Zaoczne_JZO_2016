@@ -11,11 +11,15 @@ public:
 	string brand;
 	string version;
 
-	void soldTo(Person p);
+	virtual void soldTo(Person p);
 
 	Car();
 	Car(const  Car & _car);
 	Car(Person _owner, int _year, string _brand, string _version);
-	~Car();
+	virtual ~Car();
+private:
+	int privateField;
+protected:
+	int protectedField;
 };
 

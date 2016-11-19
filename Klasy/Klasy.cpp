@@ -26,9 +26,13 @@ void printPerson3(Person * person) {
 
 int main() {
 	Person p("Anna", "Iwan", 780512712548L, 175, "german");
-	Truck * t = new Truck(p,2012,"Volvo","a333",1500);
-
-	cout << t->brand<<" -- "<<t->load;
+	Car * t = new Truck(p,2012,"Volvo","a333",1500);
+	Person * wp = new Person("Tomasz", "Tomaszewski", 
+		1221825421L, 170, "polish");
+	cout << t->owner.surname<<" "<< t->brand<<" -- "//<<t->load
+		<<endl;
+	t->soldTo(*wp);
+	cout << t->owner.surname << " " << t->brand << " -- "<< endl;
 	delete t;
 	system("pause");
 
