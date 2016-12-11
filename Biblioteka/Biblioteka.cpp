@@ -25,6 +25,7 @@ void Biblioteka::wypozyczenie(ElementKatalogowy element, Klient klient, Personel
 		//elementyWypozyczone dodaj element;
 		//wypozyczenia dodaj klienta w to samo miejsce;
 		//skasuj rezerwacje je¿li istnia³a 
+		
 		elementyWypozyczone.push_back(element);
 		wypozyczenia.push_back(klient);
 
@@ -45,6 +46,7 @@ void Biblioteka::zwrot(ElementKatalogowy element, Klient klient, Personel person
 }
 
 void Biblioteka::zakup(ElementKatalogowy element, Personel personel) {
+	element.nrKat = katalog.size();//poprawic z likwidacj¹
 	katalog.push_back(element);
 }
 
