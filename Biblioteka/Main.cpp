@@ -14,7 +14,8 @@ int main()
 	Personel* personel = new Personel("Tamara","Tomaszewska");
 	Klient* klient = new Klient("Adam","Kowalski");
 	//Tworze kilka ksi¹zek;
-	Autor* autorzy[2];
+	Autor autorzy[1];
+	autorzy[0] = Autor("Juliusz", "S³owacki");
 	string tytul = "Balladyna";
 	Ksiazka* k = new Ksiazka(autorzy, tytul);
 	biblioteka->zakup(*k, *personel);

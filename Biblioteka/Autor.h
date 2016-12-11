@@ -22,6 +22,7 @@ public:
 	std::string imie;
 	string nazwisko;
 	Autor(string imie, string nazwisko);
+	Autor();
 };
 
 #endif  //_AUTOR_H
