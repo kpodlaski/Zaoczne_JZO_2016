@@ -16,6 +16,8 @@
 #include "Osoba.h"
 
 class Personel : public Osoba {
+public:
+	Personel(string imie, string nazwisko);
 };
 
 #endif  //_PERSONEL_H

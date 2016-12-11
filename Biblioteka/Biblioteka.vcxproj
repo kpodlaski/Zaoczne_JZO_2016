@@ -158,10 +158,14 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Autor.cpp" />
     <ClCompile Include="Biblioteka.cpp" />
     <ClCompile Include="ElementKatalogowy.cpp" />
+    <ClCompile Include="Klient.cpp" />
     <ClCompile Include="Ksiazka.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Osoba.cpp" />
+    <ClCompile Include="Personel.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

@@ -68,6 +68,18 @@
     <ClCompile Include="Ksiazka.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Osoba.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Personel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Klient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Autor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Biblioteka.uml" />

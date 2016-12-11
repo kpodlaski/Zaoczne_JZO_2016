@@ -45,7 +45,7 @@ void Biblioteka::zwrot(ElementKatalogowy element, Klient klient, Personel person
 }
 
 void Biblioteka::zakup(ElementKatalogowy element, Personel personel) {
-
+	katalog.push_back(element);
 }
 
 void Biblioteka::likwidacja(ElementKatalogowy element, Personel personel) {

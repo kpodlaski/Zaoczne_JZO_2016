@@ -17,8 +17,8 @@
 class ElementKatalogowy {
 public:
 	int nrKat;
-	string opis();
-	string szczegolowyOpis();
+	virtual string opis();
+	virtual string szczegolowyOpis();
 };
 
 #endif  //_ELEMENTKATALOGOWY_H

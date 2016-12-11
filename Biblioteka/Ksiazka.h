@@ -26,6 +26,8 @@ public:
 	string opis();
 	string szczegolowypis();
 	Autor *autorzy;
+
+	Ksiazka(Autor* autorzy, string tytul);
 };
 
 #endif  //_KSIAZKA_H

@@ -16,6 +16,8 @@
 #include "Osoba.h"
 
 class Klient : public Osoba {
+public: 
+	Klient(string imie, string nazwisko);
 };
 
 #endif  //_KLIENT_H

@@ -20,6 +20,8 @@ class Osoba {
 public:
 	string Imie;
 	string Nazwisko;
+
+	Osoba(string imie, string nazwisko);
 };
 
 #endif  //_OSOBA_H

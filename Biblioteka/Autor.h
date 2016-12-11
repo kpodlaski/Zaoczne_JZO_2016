@@ -21,6 +21,7 @@ class Autor {
 public:
 	std::string imie;
 	string nazwisko;
+	Autor(string imie, string nazwisko);
 };
 
 #endif  //_AUTOR_H
