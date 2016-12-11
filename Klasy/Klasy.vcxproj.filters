@@ -51,4 +51,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Propozycje projektów na Programowanie Zorientowane Obiektowo.pdf" />
+  </ItemGroup>
 </Project>
