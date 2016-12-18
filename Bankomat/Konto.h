@@ -17,9 +17,11 @@
 
 class Konto {
 public:
+	int nrKonta;
 	double wplata(double ile);
 	bool wyplata(double ile);
 	double wyswietl_stan();
+	Konto(int nrKonta, double stan);
 private:
 	double stan;
 };
