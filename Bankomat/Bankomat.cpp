@@ -22,6 +22,7 @@ int main() {
 		bankomat.autoryzacjaPIN();
 		while (bankomat.sesjaid > 0) {
 			int operacja;
+			cout << endl;
 			cout << "[1] - wyplata" << endl;
 			cout << "[2] - wplata" << endl;
 			cout << "[3] - stan konta" << endl;
@@ -51,7 +52,7 @@ void Bankomat::wyplata() {
 		}
 		else cout << "Brak srodkow na koncie" << endl;
 	}
-	cout << "Bankomat nieczynny" << endl;
+	else cout << "Bankomat nieczynny" << endl;
 }
 
 void Bankomat::wplata() {
@@ -84,6 +85,13 @@ void Bankomat::autoryzacjaPIN() {
 }
 
 void Bankomat::koniecSesji() {
-
+	sesjaid = 0;
 }
 
+Bankomat::Bankomat(): sesjaid(0), gotowka(1000) {
+	bank = new Bank();
+}
+
+Bankomat::~Bankomat() {
+	delete bank;
+}

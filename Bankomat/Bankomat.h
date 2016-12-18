@@ -28,6 +28,8 @@ public:
 	void autoryzacjaPIN();
 	void koniecSesji();
 	Bank *bank;
+	Bankomat();
+	~Bankomat();
 };
 
 #endif  //_BANKOMAT_H
