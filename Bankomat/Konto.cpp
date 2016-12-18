@@ -16,21 +16,14 @@ using namespace std;
 
 double Konto::wplata(double ile) {
 
-	stan += ile;
-	return stan;
+	return 0.0;
 }
 
 bool Konto::wyplata(double ile) {
-	if (stan >= ile) {
-		stan -= ile;
-		return true;
-	}
-	else return false;
+	return false;
 }
 
 double Konto::wyswietl_stan() {
-	return stan;
+	return 0.0;
 }
 
-Konto::Konto(int _nrKonta, double _stan):  nrKonta(_nrKonta), stan(_stan)
-{}

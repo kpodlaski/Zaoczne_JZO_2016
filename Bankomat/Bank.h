@@ -15,18 +15,14 @@
 
 #include "Konto.h"
 #include "stdafx.h"
-#include <vector>
-using namespace std;
 
 class Bank {
 public:
-	Bank();
-	~Bank();
 	bool wyplata(double ile, int nrKonta);
 	double wplata(double ile, int nrKonta);
 	double stanKonta(int nrKonta);
 private:
-	vector<Konto *> konta;
+	Konto *konta;
 };
 
 #endif  //_BANK_H
