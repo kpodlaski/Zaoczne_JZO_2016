@@ -9,18 +9,21 @@
 //
 //
 
-
+#include "stdafx.h"
 #include "Konto.h"
+
+using namespace std;
 
 double Konto::wplata(double ile) {
 
+	return 0.0;
 }
 
 bool Konto::wyplata(double ile) {
-
+	return false;
 }
 
 double Konto::wyswietl_stan() {
-
+	return 0.0;
 }
 

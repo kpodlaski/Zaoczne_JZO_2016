@@ -9,27 +9,78 @@
 //
 //
 
-
+#include "stdafx.h"
 #include "Bankomat.h"
+#include <iostream>
 
-void Bankomat::wyplata(double ile, int nrKonta) {
+using namespace std;
 
+int main() {
+	Bankomat bankomat;
+	while (true) {
+		bankomat.nowaSesja();
+		bankomat.autoryzacjaPIN();
+		while (bankomat.sesjaid > 0) {
+			int operacja;
+			cout << "[1] - wyplata" << endl;
+			cout << "[2] - wplata" << endl;
+			cout << "[3] - stan konta" << endl;
+			cout << "[4] - koniec sesji" << endl;
+			cout << "[0] - zamknij program" << endl;
+			cin >> operacja;
+			switch (operacja) {
+			case 1: bankomat.wyplata(); break;
+			case 2: bankomat.wplata(); break;
+			case 3: bankomat.stanKonta(); break;
+			case 4: bankomat.koniecSesji(); break;
+			case 0: return 0 ;
+			}
+		}
+	}
+	return 0;
 }
 
-void Bankomat::wp³ata(double ile, int nrKonta) {
-
+void Bankomat::wyplata() {
+	cout << "Podaj kwote" << endl;
+	int kwota;
+	cin >> kwota;
+	if (gotowka >= kwota) {
+		if (bank->wyplata(kwota, nrKonta)) {
+			gotowka = gotowka - kwota;
+			cout << "Wyplacam ci " << kwota << endl;
+		}
+		else cout << "Brak srodkow na koncie" << endl;
+	}
+	cout << "Bankomat nieczynny" << endl;
 }
 
-void Bankomat::stanKonta(int nrKonta) {
+void Bankomat::wplata() {
+	cout << "Podaj kwote" << endl;
+	double kwota;
+	cin >> kwota;
+	kwota = bank->wplata(kwota, nrKonta);
+	cout << "Nowy stan konta: " << kwota;
+}
 
+void Bankomat::stanKonta() {
+	double stan = bank->stanKonta(nrKonta);
+	cout << "Stan Konta:" << stan << endl;
 }
 
 void Bankomat::nowaSesja() {
-
+	cout << "Wprowadz Karte" << endl;
+	cin >> nrKonta;
+	sesjaid++;
 }
 
 void Bankomat::autoryzacjaPIN() {
-
+	cout << "Podaj PIN" << endl;
+	int pin;
+	cin >> pin;
+	if (pin != nrKonta % 10000) {
+		cout << "Zly PIN" << endl;
+		sesjaid = 0;
+	}
 }
 
 void Bankomat::koniecSesji() {

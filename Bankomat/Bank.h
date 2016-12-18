@@ -14,6 +14,7 @@
 #define _BANK_H
 
 #include "Konto.h"
+#include "stdafx.h"
 
 class Bank {
 public:

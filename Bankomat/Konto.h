@@ -9,6 +9,7 @@
 //
 //
 
+#include "stdafx.h"
 
 #if !defined(_KONTO_H)
 #define _KONTO_H

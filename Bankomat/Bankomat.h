@@ -14,15 +14,16 @@
 #define _BANKOMAT_H
 
 #include "Bank.h"
+#include "stdafx.h"
 
 class Bankomat {
 public:
 	int sesjaid;
 	int nrKonta;
 	int gotowka;
-	void wyplata(double ile, int nrKonta);
-	void wp³ata(double ile, int nrKonta);
-	void stanKonta(int nrKonta);
+	void wyplata();
+	void wplata();
+	void stanKonta();
 	void nowaSesja();
 	void autoryzacjaPIN();
 	void koniecSesji();
