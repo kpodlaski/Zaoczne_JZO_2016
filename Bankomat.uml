@@ -432,7 +432,7 @@ wypłata - sprwadza stan konta, wypłaca jeśli niema debetu,
 <XPD:REF name="Owner">IfmhaKLFXEu92Cy3AuA++QAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[1]" type="UMLOperation" guid="greWma7PxES8ePsK6dzscgAA">
-<XPD:ATTR name="Name" type="string">wpłata</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">wplata</XPD:ATTR>
 <XPD:REF name="Owner">IfmhaKLFXEu92Cy3AuA++QAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[2]" type="UMLOperation" guid="xOsBwQsvLEKfWKvsFA6THAAA">

@@ -60,7 +60,7 @@
 <XPD:ATTR name="Left" type="integer">104</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">28</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">146</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">95</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">108</XPD:ATTR>
 <XPD:REF name="Model">UsMsKqyggUmpHXP7xTjkUwAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="mTJ5GnNFCU+gOU5HPzeL2AAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="95LpdXT2mkSHs3lUXXRylwAA">
@@ -99,7 +99,7 @@ wypłata - sprwadza stan konta, wypłaca jeśli niema debetu,
 <XPD:OBJ name="OwnedViews[2]" type="UMLNoteLinkView" guid="f+xf70Z9QEysZCBmBxWCpwAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">249,61;330,45</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">249,65;340,45</XPD:ATTR>
 <XPD:REF name="Head">Dfx7e1/vy0S9bcng9JUECAAA</XPD:REF>
 <XPD:REF name="Tail">FgY8Z3r9x06eRk+fMK05HAAA</XPD:REF>
 </XPD:OBJ>
@@ -139,16 +139,16 @@ wypłata - sprwadza stan konta, wypłaca jeśli niema debetu,
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">212</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">292</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">233</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">237</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">38</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">sesja - nadanie nrKonta, Pis ostatnie 4 cyfry
+<XPD:ATTR name="Text" type="string">sesja - nadanie nrKonta, PIN ostatnie 4 cyfry
  konta
 </XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[5]" type="UMLNoteLinkView" guid="wujLJxoRD0qqSYusHnl1rQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">196,263;277,292</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">196,262;280,292</XPD:ATTR>
 <XPD:REF name="Head">HK9HRCebNkKTdyQBX4O1AwAA</XPD:REF>
 <XPD:REF name="Tail">HvZOjWvdR0CmysPQ9xZZLwAA</XPD:REF>
 </XPD:OBJ>
@@ -186,7 +186,7 @@ wypłata - sprwadza stan konta, wypłaca jeśli niema debetu,
 <XPD:OBJ name="OwnedViews[7]" type="UMLAssociationView" guid="E6QLLPHmGEKmrEhl17pu5wAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">249,93;456,145</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">249,98;456,147</XPD:ATTR>
 <XPD:REF name="Model">dMXTR/YAUEijA3M9R579UAAA</XPD:REF>
 <XPD:REF name="Head">E2wWgo3IeEm//myBgMpDKAAA</XPD:REF>
 <XPD:REF name="Tail">FgY8Z3r9x06eRk+fMK05HAAA</XPD:REF>
@@ -405,11 +405,16 @@ wypłata - sprwadza stan konta, wypłaca jeśli niema debetu,
 </XPD:OBJ>
 <XPD:ATTR name="#Associations" type="integer">1</XPD:ATTR>
 <XPD:REF name="Associations[0]">TRF/3N+uMkewX5/pFBR27gAA</XPD:REF>
-<XPD:ATTR name="#Attributes" type="integer">1</XPD:ATTR>
+<XPD:ATTR name="#Attributes" type="integer">2</XPD:ATTR>
 <XPD:OBJ name="Attributes[0]" type="UMLAttribute" guid="qFMlLK8MiUuvBl1XLdw61wAA">
 <XPD:ATTR name="Name" type="string">stan</XPD:ATTR>
 <XPD:ATTR name="Visibility" type="UMLVisibilityKind">vkPrivate</XPD:ATTR>
 <XPD:ATTR name="TypeExpression" type="string">double</XPD:ATTR>
+<XPD:REF name="Owner">UsMsKqyggUmpHXP7xTjkUwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Attributes[1]" type="UMLAttribute" guid="a0HXSFxh7E2xrGHkZOs5xAAA">
+<XPD:ATTR name="Name" type="string">nrKonta</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
 <XPD:REF name="Owner">UsMsKqyggUmpHXP7xTjkUwAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -425,42 +430,14 @@ wypłata - sprwadza stan konta, wypłaca jeśli niema debetu,
 <XPD:OBJ name="Operations[0]" type="UMLOperation" guid="KEEV+pHPLEetsuy5kfgWPwAA">
 <XPD:ATTR name="Name" type="string">wyplata</XPD:ATTR>
 <XPD:REF name="Owner">IfmhaKLFXEu92Cy3AuA++QAA</XPD:REF>
-<XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="XTANbyoR0kuIuoOAuSOuDAAA">
-<XPD:ATTR name="Name" type="string">ile</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">double</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">KEEV+pHPLEetsuy5kfgWPwAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="v/E4+HhQZUyZ8oBIhV8SkQAA">
-<XPD:ATTR name="Name" type="string">nrKonta</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">KEEV+pHPLEetsuy5kfgWPwAA</XPD:REF>
-</XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[1]" type="UMLOperation" guid="greWma7PxES8ePsK6dzscgAA">
 <XPD:ATTR name="Name" type="string">wpłata</XPD:ATTR>
 <XPD:REF name="Owner">IfmhaKLFXEu92Cy3AuA++QAA</XPD:REF>
-<XPD:ATTR name="#Parameters" type="integer">2</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="WLNsdimArUyutFOvyPqrgAAA">
-<XPD:ATTR name="Name" type="string">ile</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">double</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">greWma7PxES8ePsK6dzscgAA</XPD:REF>
-</XPD:OBJ>
-<XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="nYSKBNcyokqJmguvFE+KZQAA">
-<XPD:ATTR name="Name" type="string">nrKonta</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">greWma7PxES8ePsK6dzscgAA</XPD:REF>
-</XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[2]" type="UMLOperation" guid="xOsBwQsvLEKfWKvsFA6THAAA">
 <XPD:ATTR name="Name" type="string">stanKonta</XPD:ATTR>
 <XPD:REF name="Owner">IfmhaKLFXEu92Cy3AuA++QAA</XPD:REF>
-<XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
-<XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="bAz+sNpjmk27/Oh9CekORAAA">
-<XPD:ATTR name="Name" type="string">nrKonta</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">int</XPD:ATTR>
-<XPD:REF name="BehavioralFeature">xOsBwQsvLEKfWKvsFA6THAAA</XPD:REF>
-</XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="Operations[3]" type="UMLOperation" guid="UGtqNPYwi0O/FkiiZJKg2gAA">
 <XPD:ATTR name="Name" type="string">nowaSesja</XPD:ATTR>
