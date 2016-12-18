@@ -20,7 +20,7 @@ int main()
 	Ksiazka* k = new Ksiazka(autorzy, tytul);
 	biblioteka->zakup(*k, *personel);
 	//Test wypozyczenia ksi¹zki
-	biblioteka->wypozyczenie(biblioteka->katalog[5], *klient, *personel);
+	biblioteka->wypozyczenie(biblioteka->katalog[1], *klient, *personel);
     return 0;
 }
 
